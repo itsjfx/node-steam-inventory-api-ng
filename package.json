@@ -1,28 +1,35 @@
 {
-  "name": "steam-inventory-api-fork",
-  "version": "2.1.4",
-  "description": "Get the Steam inventory of a user using the new Steam endpoint",
-  "main": "dist/index.js",
+  "name": "steam-inventory-api-ng",
+  "version": "1.0.0",
+  "description": "An inventory API for Steam with advanced features such as retries and proxy support",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel source --presets es2015 --out-dir dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsjfx/steam-inventory-api.git"
+    "url": "git+https://github.com/itsjfx/node-steam-inventory-api-ng.git"
   },
-  "author": "jfx (https://jfx.ac)",
+  "keywords": [
+    "jfx",
+    "steam-inventory-api-ng",
+    "node-steam-inventory-api-ng",
+    "steam",
+    "steam-inventory-api"
+  ],
+  "author": "jfx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/itsjfx/steam-inventory-api/issues"
+    "url": "https://github.com/itsjfx/node-steam-inventory-api-ng/issues"
   },
-  "homepage": "https://github.com/itsjfx/steam-inventory-api#readme",
+  "homepage": "https://github.com/itsjfx/node-steam-inventory-api-ng#readme",
   "dependencies": {
-    "request": "^2.79.0",
-    "request-promise-native": "^1.0.3"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "steamid": "^1.1.3"
   }
 }
