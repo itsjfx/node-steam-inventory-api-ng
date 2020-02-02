@@ -8,7 +8,7 @@ Our InventoryAPI, extends EventEmitter to have an in-built EventEmitter for logg
 
 * [InventoryAPI](#InventoryAPI) ⇐ <code>EventEmitter</code>
     * [new InventoryAPI([options])](#new_InventoryAPI_new)
-    * [.get(steamid, appid, contextid, tradableOnly, [retries], [language])](#InventoryAPI+get) ⇒ <code>Promise</code>
+    * [.get(steamid, appid, contextid, [tradableOnly], [retries], [language])](#InventoryAPI+get) ⇒ <code>Promise</code>
 
 <a name="new_InventoryAPI_new"></a>
 
@@ -29,7 +29,7 @@ An Inventory API instance
 
 <a name="InventoryAPI+get"></a>
 
-### inventoryAPI.get(steamid, appid, contextid, tradableOnly, [retries], [language]) ⇒ <code>Promise</code>
+### inventoryAPI.get(steamid, appid, contextid, [tradableOnly], [retries], [language]) ⇒ <code>Promise</code>
 Get the contents of a users inventory. Designed to be the same as DoctorMcKay's getUserInventoryContents from node-steamcommunity (with retries)
 
 **Kind**: instance method of [<code>InventoryAPI</code>](#InventoryAPI)  
@@ -40,7 +40,7 @@ Get the contents of a users inventory. Designed to be the same as DoctorMcKay's 
 | steamid | <code>SteamID</code> \| <code>string</code> |  | SteamID object from node-steamid or a string which can be parsed into a SteamID object |
 | appid | <code>int</code> |  | The Steam application ID of the app |
 | contextid | <code>int</code> |  | The ID of the context within the app you wish to retrieve |
-| tradableOnly | <code>boolean</code> |  | true to get only tradeable items and currencies |
+| [tradableOnly] | <code>boolean</code> |  | true to get only tradeable items and currencies |
 | [retries] | <code>number</code> | <code>1</code> | How many calls to make to an inventory before rejecting. If an inventory is private or not found this value is ignored and an error is thrown after the first request. |
 | [language] | <code>string</code> | <code>&quot;&#x27;english&#x27;&quot;</code> | The language of item descriptions to return (default: 'english') |
 

@@ -48,7 +48,7 @@ class InventoryAPI extends EventEmitter {
 	 * @param {SteamID|string} steamid - SteamID object from node-steamid or a string which can be parsed into a SteamID object 
 	 * @param {int} appid - The Steam application ID of the app 
 	 * @param {int} contextid - The ID of the context within the app you wish to retrieve 
-	 * @param {boolean} tradableOnly - true to get only tradeable items and currencies 
+	 * @param {boolean} [tradableOnly] - true to get only tradeable items and currencies 
 	 * @param {number} [retries=1] - How many calls to make to an inventory before rejecting. If an inventory is private or not found this value is ignored and an error is thrown after the first request.
 	 * @param {string} [language='english'] - The language of item descriptions to return (default: 'english')
 	 * @returns {Promise} Promise object containing an object with keys: inventory, currency and total_inventory_count - with inventory and currency being an array of CEconItem objects.
