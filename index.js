@@ -130,8 +130,8 @@ class InventoryAPI extends EventEmitter {
 					// Check whether the profile is private or found before retrying
 					let error = new Error();
 					this.emit('log', 'stack', err, steamid);
-					if (err.message == "HTTP error 403" || err.statusCode && err.statusCode === 403) {
-						// 403 with a body of "null" means the inventory/profile is private.
+					
+					if (err.statusCode && err.statusCode === 403) {
 						error.message = "Profile or inventory is private.";
 						error.statusCode = 403;
 						error.code = 403;
