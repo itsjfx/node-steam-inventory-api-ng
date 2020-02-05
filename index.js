@@ -96,7 +96,7 @@ class InventoryAPI extends EventEmitter {
 				if (this.requestOptions.qs) // Make sure that if we are overriding query strings we put the defaults back in
 					options.qs = Object.assign({}, this.requestOptions.qs, defaults.qs);
 
-				this.emit('log', 'debug', `Requesting. Start ${start ? start : 0}, Retries ${retries}, Items ${inventory.length}`, steamid);
+				this.emit('log', 'debug', `Requesting. Start ${start ? start : 0}, Retries ${retries}, Items ${inventory.length}`, steamid.getSteamID64());
 
 				request.get(options)
 				.then(res => {
@@ -129,7 +129,7 @@ class InventoryAPI extends EventEmitter {
 				}).catch(err => {
 					// Check whether the profile is private or found before retrying
 					let error = new Error();
-					this.emit('log', 'stack', err, steamid);
+					this.emit('log', 'stack', err, steamid.getSteamID64());
 					
 					if (err.statusCode && err.statusCode === 403) {
 						error.message = "Profile or inventory is private.";
@@ -145,7 +145,7 @@ class InventoryAPI extends EventEmitter {
 						return reject(error);
 					}
 
-					this.emit('log', 'error', `Request failed${this.useProxy ? " on proxy: " + options.proxy : ""}`, steamid);
+					this.emit('log', 'error', `Request failed${this.useProxy ? " on proxy: " + options.proxy : ""}`, steamid.getSteamID64());
 
 					if (retries > 1) {
 						retries -= 1;
