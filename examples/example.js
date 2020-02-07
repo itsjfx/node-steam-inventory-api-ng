@@ -35,9 +35,7 @@ inventoryApi.get(
 	10
 )
 .then(res => {
-	//console.log(`Item market names:\n${JSON.stringify(res.inventory.map(item => item.market_hash_name), null, 4)}`);
-	//console.log(res.inventory[res.inventory.length-1].tags);
-	const inv = res.inventory;
+	console.log(`Item market names:\n${JSON.stringify(res.inventory.map(item => item.market_hash_name), null, 4)}`);
 })
 .catch(err => {
 	console.log(err);
