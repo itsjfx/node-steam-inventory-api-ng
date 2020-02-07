@@ -20,8 +20,8 @@ const inventoryApi = new InventoryAPI({
 });
 
 const steamid = '76561197993496553';
-const appid = 753;
-const contextid = 6;
+const appid = 730;
+const contextid = 2;
 
 inventoryApi.on('log', (type, message, steamid) => {
 	console.log(`${type} - ${steamid} - ${message}`);
@@ -36,7 +36,8 @@ inventoryApi.get(
 )
 .then(res => {
 	//console.log(`Item market names:\n${JSON.stringify(res.inventory.map(item => item.market_hash_name), null, 4)}`);
-	console.log(res);
+	//console.log(res.inventory[res.inventory.length-1].tags);
+	const inv = res.inventory;
 })
 .catch(err => {
 	console.log(err);

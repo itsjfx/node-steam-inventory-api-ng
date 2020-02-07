@@ -102,7 +102,7 @@ class InventoryAPI extends EventEmitter {
 				.then(res => {
 					if (res && res.success && res.total_inventory_count === 0) {
 						// Empty inventory
-						return resolve([], [], 0);
+						return resolve({inventory: [], currency: [], total_inventory_count: 0});
 					}
 
 					if (!res || !res.success || !res.assets || !res.descriptions) {
