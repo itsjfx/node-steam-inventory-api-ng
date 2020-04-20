@@ -9,7 +9,7 @@ npm install steam-inventory-api-ng
 
 ## This project
 
-My former forked version (steam-inventory-api-ng) of the original steam-inventory-api is no longer going to be maintained, however it will stay up for any old projects. This will be the new place for any new development. It didn't seem right to keep developing inside a fork so therefore ng (next generation) was appropriate.
+My former forked version (steam-inventory-api-fork) of the original steam-inventory-api is no longer going to be maintained, however it will stay up for any old projects. This will be the new place for any new development. It didn't seem right to keep developing inside a fork so therefore ng (next generation) was appropriate.
 
 This module is developed with the goal of adding new features to existing inventory API's, mostly DoctorMcKay's node-steamcommunity getUserInventoryContents API. The newer features added are:
 
