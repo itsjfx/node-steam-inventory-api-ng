@@ -1,11 +1,12 @@
 {
   "name": "steam-inventory-api-ng",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An inventory API for Steam with advanced features such as retries and proxy support",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
     "example": "examples",
-    "lib": "lib"
+	"lib": "lib",
+	"resources": "resources"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
