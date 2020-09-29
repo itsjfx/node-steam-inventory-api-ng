@@ -1,7 +1,7 @@
 # node-steam-inventory-api-ng
 [![npm version](https://img.shields.io/npm/v/steam-inventory-api-ng.svg)](https://npmjs.com/package/steam-inventory-api-ng) 
 
-An inventory API for Steam with advanced features such as retries and proxy support
+An inventory API for Steam with advanced features such as retries and proxy support.
 
 ```
 npm install steam-inventory-api-ng
@@ -21,15 +21,15 @@ As this module is designed to add on functionality, any former project using `no
 
 It's worth noting that if an inventory is private or not found more requests will not be done.
 
-For documentation see [doc.md](https://github.com/itsjfx/node-steam-inventory-api-ng/blob/master/doc.md)
+For documentation see [doc.md](https://github.com/itsjfx/node-steam-inventory-api-ng/blob/master/doc.md).
 
 ## Examples
 
-Please see any examples in the `examples` folder
+Please see any examples in the `examples` folder.
 
 ## Logging
 
-To get any logging events just use something like below
+To get any logging events just use something like below:
 ```
 inventoryApi.on('log', (type, message, steamid) => {
 	console.log(`${type} - ${steamid} - ${message}`);
