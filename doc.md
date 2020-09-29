@@ -8,7 +8,10 @@ Our InventoryAPI, extends EventEmitter to have an in-built EventEmitter for logg
 
 * [InventoryAPI](#InventoryAPI) ⇐ <code>EventEmitter</code>
     * [new InventoryAPI([options])](#new_InventoryAPI_new)
-    * [.get(steamid, appid, contextid, [tradableOnly], [retries], [language])](#InventoryAPI+get) ⇒ <code>Promise</code>
+    * _instance_
+        * [.get(steamid, appid, contextid, [tradableOnly], [retries], [language])](#InventoryAPI+get) ⇒ <code>Promise</code>
+    * _static_
+        * [.CEconItem](#InventoryAPI.CEconItem) : <code>CEconItem</code>
 
 <a name="new_InventoryAPI_new"></a>
 
@@ -44,3 +47,9 @@ Get the contents of a users inventory. Designed to be the same as DoctorMcKay's 
 | [retries] | <code>number</code> | <code>1</code> | How many calls to make to an inventory before rejecting. If an inventory is private or not found this value is ignored and an error is thrown after the first request. |
 | [language] | <code>string</code> | <code>&quot;&#x27;english&#x27;&quot;</code> | The language of item descriptions to return (default: 'english') |
 
+<a name="InventoryAPI.CEconItem"></a>
+
+### InventoryAPI.CEconItem : <code>CEconItem</code>
+CEconItem - the class used to represent an item. https://github.com/DoctorMcKay/node-steamcommunity/wiki/CEconItem
+
+**Kind**: static property of [<code>InventoryAPI</code>](#InventoryAPI)  
