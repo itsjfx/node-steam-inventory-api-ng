@@ -1,1 +1,1 @@
-jsdoc2md -f index.js > doc.md
+npx jsdoc2md -f lib/index.js > doc.md
