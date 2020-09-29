@@ -1,6 +1,6 @@
 {
   "name": "steam-inventory-api-ng",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "An inventory API for Steam with advanced features such as retries and proxy support",
   "main": "./lib/index.js",
   "directories": {
