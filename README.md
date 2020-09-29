@@ -17,11 +17,15 @@ This module is developed with the goal of adding new features to existing invent
 - Proxies. The module can handle an array of proxies and automatically cycles through them
 - Improved error handling for private and profiles which are not found
 
-As this module is designed to add on functionality, any former project using `node-steamcommunity`'s `getUserInventoryContents` can easily be ported over to this project. Some of the code base is recycled from `getUserInventoryContents`, for example, items will be returned as `CEconItem` objects just like `getUserInventoryContents`.
+As this module is designed to add on functionality, any former project using `node-steamcommunity`'s `getUserInventoryContents` can easily be ported over to this project. Some of the code base is recycled, such as items will be returned as `CEconItem` objects.
 
 It's worth noting that if an inventory is private or not found more requests will not be done.
 
 For documentation see [doc.md](https://github.com/itsjfx/node-steam-inventory-api-ng/blob/master/doc.md)
+
+## Examples
+
+Please see any examples in the example folder
 
 ## Logging
 
