@@ -25,7 +25,7 @@ For documentation see [doc.md](https://github.com/itsjfx/node-steam-inventory-ap
 
 ## Examples
 
-Please see any examples in the example folder
+Please see any examples in the `examples` folder
 
 ## Logging
 
