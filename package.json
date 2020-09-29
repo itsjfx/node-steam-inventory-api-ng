@@ -1,12 +1,12 @@
 {
   "name": "steam-inventory-api-ng",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "An inventory API for Steam with advanced features such as retries and proxy support",
   "main": "./lib/index.js",
   "directories": {
     "example": "examples",
-	"lib": "lib",
-	"resources": "resources"
+    "lib": "lib",
+    "resources": "resources"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,11 +16,11 @@
     "url": "git+https://github.com/itsjfx/node-steam-inventory-api-ng.git"
   },
   "keywords": [
-    "jfx",
     "steam-inventory-api-ng",
     "node-steam-inventory-api-ng",
     "steam",
-    "steam-inventory-api"
+    "steam-inventory-api",
+    "steam inventory api"
   ],
   "author": "jfx",
   "license": "MIT",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/itsjfx/node-steam-inventory-api-ng#readme",
   "dependencies": {
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.8",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
     "steamid": "^1.1.3"
   }
 }
