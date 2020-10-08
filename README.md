@@ -1,7 +1,7 @@
 # node-steam-inventory-api-ng
 [![npm version](https://img.shields.io/npm/v/steam-inventory-api-ng.svg)](https://npmjs.com/package/steam-inventory-api-ng) 
 
-An inventory API for Steam with advanced features such as retries and proxy support.
+A wrapper for the Steam Inventory API with advanced features such as retries and proxy support.
 
 ```
 npm install steam-inventory-api-ng
@@ -11,7 +11,7 @@ npm install steam-inventory-api-ng
 
 My former forked version (`steam-inventory-api-fork`) of the original `steam-inventory-api` is no longer going to be maintained, however it will stay up for any old projects. This will be the new place for any new development. It didn't seem right to keep developing inside a fork so therefore `ng` (next generation) was appropriate.
 
-This module is developed with the goal of adding new features to existing inventory API's, mostly DoctorMcKay's `node-steamcommunity` `getUserInventoryContents` call. The newer features added are:
+This module is developed with the goal of adding new features to existing inventory fetchers, mostly DoctorMcKay's `node-steamcommunity` `getUserInventoryContents` call. The newer features added are:
 
 - Retries on failed requests
 - Proxies. The module can handle an array of proxies and automatically cycles through them
