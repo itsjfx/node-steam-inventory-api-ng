@@ -1,7 +1,7 @@
 # node-steam-inventory-api-ng
 [![npm version](https://img.shields.io/npm/v/steam-inventory-api-ng.svg)](https://npmjs.com/package/steam-inventory-api-ng) 
 
-A wrapper for the Steam Inventory API with advanced features such as retries and proxy support.
+A Steam Inventory API wrapper with advanced features such as retries and proxy support.
 
 ```
 npm install steam-inventory-api-ng
