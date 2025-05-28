@@ -1,3 +1,6 @@
+// credits to DoctorMcKay
+// from node-steamcommunity which is licensed under MIT License
+// https://github.com/DoctorMcKay/node-steamcommunity/blob/master/classes/CEconItem.js
 module.exports = CEconItem;
 
 function CEconItem(item, description, contextID) {
@@ -28,7 +31,7 @@ function CEconItem(item, description, contextID) {
 		}
 
 		for (thing in description) {
-			if (description.hasOwnProperty(thing)) {
+			if (description.hasOwnProperty(thing) && !this.hasOwnProperty(thing)) {
 				this[thing] = description[thing];
 			}
 		}
@@ -68,9 +71,9 @@ function CEconItem(item, description, contextID) {
 
 	// Restore cache_expiration, if we can (for CS:GO items)
 	if (this.appid == 730 && this.contextid == 2 && this.owner_descriptions) {
-		let description = this.owner_descriptions.find(d => d.value && d.value.indexOf('Tradable After ') == 0);
+		let description = this.owner_descriptions.find(d => d.value && d.value.indexOf('Tradable/Marketable After ') == 0);
 		if (description) {
-			let date = new Date(description.value.substring(15).replace(/[,()]/g, ''));
+			let date = new Date(description.value.substring(26).replace(/[,()]/g, ''));
 			if (date) {
 				this.cache_expiration = date.toISOString();
 			}
