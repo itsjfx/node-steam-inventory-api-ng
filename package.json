@@ -32,5 +32,8 @@
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
     "steamid": "^1.1.3"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^9.1.1"
   }
 }
